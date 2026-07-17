@@ -332,16 +332,18 @@ I used the FTK Imager command-line utility to generate MD5 and SHA1 values for:
 Evidence_drive1.001
 ```
 
+After locating the FTK Imager command-line executable, I navigated to the folder containing the evidence image and ran the verification command:
+
 The command-line results provided an additional method for confirming the integrity of the forensic image outside the graphical interface.
 
-> Replace the placeholder below with the exact command used in the lab.
-
 ```cmd
-REM Enter the FTK Imager command used to hash Evidence_drive1.001
+"C:\Program Files\AccessData\FTK Imager\cmd\ftkimager.exe" "C:\Daubert Standard Evidence\Image1\Evidence_drive1.001" --verify
 ```
 
 <p align="center">
-  <img width="900" alt="Command-line MD5 and SHA1 verification for Evidence_drive1.001" src="PASTE-COMMAND-LINE-HASH-IMAGE-URL-HERE" />
+  <img src="https://github.com/user-attachments/assets/4f6a63b2-7ee0-4011-930a-2112e3c41d6e"
+       alt="FTK Imager forensic evidence verification"
+       width="800">
 </p>
 
 ---
@@ -357,7 +359,17 @@ I examined additional deleted files and identified their original filenames and 
 | `$RX3177E.pdf` | `hr letter for visa.pdf` | `G:\Work Doc\hr letter for visa.pdf` |
 
 <p align="center">
-  <img width="900" alt="Additional deleted evidence and original file paths" src="PASTE-ADDITIONAL-EVIDENCE-IMAGE-URL-HERE" />
+  <img src="https://github.com/user-attachments/assets/7b33f553-0de5-43bd-a0d8-4191685f0b81"
+       alt="FTK Imager forensic evidence verification"
+       width="800">
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/4e6c0a77-46d6-4c46-96c3-a2f0305dd647"
+       alt="FTK Imager forensic evidence verification"
+       width="800">
+  <br><br>
+  <img src="https://github.com/user-attachments/assets/49aedb53-daab-4617-bc4d-03f94e342a40"
+       alt="FTK Imager forensic evidence verification"
+       width="800">
 </p>
 
 ---
@@ -387,38 +399,6 @@ This lab demonstrated several practices that support the reliability of digital 
 This investigation demonstrated a complete digital evidence workflow, beginning with legal authorization and chain-of-custody documentation and continuing through evidence recovery, extraction, hashing, cross-tool validation, and reporting.
 
 The lab showed that forensic findings must be supported by repeatable methods and careful documentation. Matching hashes can support evidence integrity, while mismatched hashes require the examiner to determine whether the file was modified or whether different evidence objects were selected.
-
----
-
-## Repository Contents
-
-```text
-.
-├── README.md
-├── Images/
-│   ├── search-warrant.png
-│   ├── chain-of-custody.png
-│   ├── ftk-evidence-image.png
-│   ├── unallocated-space-evidence.png
-│   ├── recycle-bin-evidence.png
-│   ├── ftk-hash-reports.png
-│   ├── e3-hash-validation.png
-│   ├── suspicious-email.png
-│   ├── autopsy-hash.png
-│   ├── e3-email-hash.png
-│   ├── command-line-hashes.png
-│   └── additional-evidence.png
-└── Lab-Documentation/
-    └── Applying-the-Daubert-Standard-to-Forensic-Evidence.pdf
-```
-
-## Lab Documentation
-
-A complete version of the lab report can be included in the `Lab-Documentation` folder.
-
-```markdown
-[View the Complete Lab Report](Lab-Documentation/Applying-the-Daubert-Standard-to-Forensic-Evidence.pdf)
-```
 
 ---
 
