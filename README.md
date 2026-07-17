@@ -260,7 +260,9 @@ I reopened the forensic image and searched the suspect's files for email evidenc
 I also modified a copy of the evidence file and generated a new hash. The original and modified files produced different values, demonstrating that even a small change to a file changes its cryptographic hash.
 
 <p align="center">
-  <img width="900" alt="Suspicious email displayed in FTK Imager" src="PASTE-SUSPICIOUS-EMAIL-IMAGE-URL-HERE" />
+  <img src="https://github.com/user-attachments/assets/32fd5ba9-18c4-4837-b5a7-4eb82430c9a6"
+       alt="FTK Imager forensic evidence verification"
+       width="750">
 </p>
 
 ### FTK Imager Email Hash Comparison
@@ -273,7 +275,9 @@ I also modified a copy of the evidence file and generated a new hash. The origin
 Because the hashes differ, the two files do not contain identical data.
 
 <p align="center">
-  <img width="900" alt="Original and modified email hash values in FTK Imager" src="PASTE-FTK-EMAIL-HASHES-IMAGE-URL-HERE" />
+  <img src="https://github.com/user-attachments/assets/73be6ed3-b8ff-4566-b80c-d386fb9fcb39"
+       alt="FTK Imager forensic evidence verification"
+       width="800">
 </p>
 
 ---
@@ -291,7 +295,9 @@ Autopsy displayed the following MD5 value for the selected item:
 This value did not match the FTK Imager `.eml` hashes because the selected Autopsy result appeared to represent the extracted `Stardust` image attachment rather than the complete email file.
 
 <p align="center">
-  <img width="900" alt="MD5 value displayed in the Autopsy Result Viewer" src="PASTE-AUTOPSY-MD5-IMAGE-URL-HERE" />
+  <img src="https://github.com/user-attachments/assets/60a74587-f07b-4cf7-8952-fd4b26ef57f9"
+       alt="FTK Imager forensic evidence verification"
+       width="800">
 </p>
 
 ---
@@ -309,7 +315,9 @@ The value did not match the FTK Imager hash for the edited `.eml` file or the Au
 This comparison reinforced an important forensic principle: hashes should only be compared when the tools are hashing the exact same evidence object and the exact same file contents.
 
 <p align="center">
-  <img width="900" alt="Email MD5 value displayed in Paraben E3" src="PASTE-E3-EMAIL-MD5-IMAGE-URL-HERE" />
+  <img src="https://github.com/user-attachments/assets/20fc2377-f586-4b05-8c30-ddd0b5c0421e"
+       alt="FTK Imager forensic evidence verification"
+       width="800">
 </p>
 
 ---
